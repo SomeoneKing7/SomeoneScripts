@@ -51,7 +51,7 @@ local redzlib = {
 		Version = "1.1.0"
 	},
 	Save = {
-		UISize = {900, 450},
+		UISize = {1500, 550},
 		TabSize = 160,
 		Theme = "Rose"
 	},
@@ -888,7 +888,7 @@ local redzlib = {
 }
 
 local ViewportSize = workspace.CurrentCamera.ViewportSize
-local UIScale = ViewportSize.Y / 460
+local UIScale = ViewportSize.Y / 60
 
 local Settings = redzlib.Settings
 local Flags = redzlib.Flags
