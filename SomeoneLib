@@ -55,7 +55,7 @@ local Someone = {
 				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))
 			}),
 			["Color Hub 2"] = Color3.fromRGB(169, 169, 169),
-			["Color Stroke"] = Color3.fromRGB(0, 0, 0),
+			["Color Stroke"] = Color3.fromRGB(255, 255, 255),
 			["Color Theme"] = Color3.fromRGB(0, 0, 0),
 			["Color Text"] = Color3.fromRGB(255, 255,255),
 			["Color Dark Text"] = Color3.fromRGB(255, 255, 255)
@@ -89,7 +89,7 @@ local Someone = {
 		Version = "1.0"
 	},
 	Save = {
-		UISize = {900, 600},
+		UISize = {450, 200},
 		TabSize = 160,
 		Theme = "Rose"
 	},
@@ -1580,13 +1580,13 @@ function Someone:MakeWindow(Configs)
 	ConnectSave(ControlSize1, function()
 		if not Minimized then
 			Someone.Save.UISize = {MainFrame.Size.X.Offset, MainFrame.Size.Y.Offset}
-			SaveJson("redz library V5.json", Someone.Save)
+			SaveJson("Someone.json", Someone.Save)
 		end
 	end)
 	
 	ConnectSave(ControlSize2, function()
 		Someone.Save.TabSize = MainScroll.Size.X.Offset
-		SaveJson("redz library V5.json", Someone.Save)
+		SaveJson("Someone.json", Someone.Save)
 	end)
 	
 	local ButtonsFolder = Create("Folder", TopBar, {
@@ -1594,7 +1594,7 @@ function Someone:MakeWindow(Configs)
 	})
 	
 	local CloseButton = Create("ImageButton", {
-		Size = UDim2.new(0, 14, 0, 14),
+		Size = UDim2.new(0, 50, 0, 50),
 		Position = UDim2.new(1, -10, 0.5),
 		AnchorPoint = Vector2.new(1, 0.5),
 		BackgroundTransparency = 1,
@@ -1605,7 +1605,7 @@ function Someone:MakeWindow(Configs)
 	
 	local MinimizeButton = SetProps(CloseButton:Clone(), {
 		Position = UDim2.new(1, -35, 0.5),
-		Image = "rbxassetid://10734896206",
+		Image = "rbxassetid://127950462202673",
 		Name = "Minimize"
 	})
 	
@@ -1634,7 +1634,7 @@ function Someone:MakeWindow(Configs)
 		
 		if Minimized then
 			MinimizeButton.Image = "rbxassetid://127950462202673"
-			CreateTween({MainFrame, "Size", SaveSize, 4.5, true})
+			CreateTween({MainFrame, "Size", SaveSize, 0.5, true})
 			ControlSize1.Visible = true
 			ControlSize2.Visible = true
 			Minimized = true
@@ -1643,7 +1643,7 @@ function Someone:MakeWindow(Configs)
 			SaveSize = MainFrame.Size
 			ControlSize1.Visible = true
 			ControlSize2.Visible = true
-			CreateTween({MainFrame, "Size", UDim2.fromOffset(MainFrame.Size.X.Offset, 28), 4.5, true})
+			CreateTween({MainFrame, "Size", UDim2.fromOffset(MainFrame.Size.X.Offset, 28), 0.5, true})
 			Minimized = true
 		end
 		
