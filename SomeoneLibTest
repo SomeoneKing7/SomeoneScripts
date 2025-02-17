@@ -888,7 +888,7 @@ local redzlib = {
 }
 
 local ViewportSize = workspace.CurrentCamera.ViewportSize
-local UIScale = ViewportSize.Y / 450
+local UIScale = ViewportSize.Y / 500
 
 local Settings = redzlib.Settings
 local Flags = redzlib.Flags
@@ -1396,13 +1396,13 @@ function redzlib:SetTheme(NewTheme)
 end
 
 function redzlib:SetScale(NewScale)
-	NewScale = ViewportSize.Y / math.clamp(NewScale, 300, 2000)
+	NewScale = ViewportSize.Y / math.clamp(NewScale, 200, 1250)
 	UIScale, ScreenGui.Scale.Scale = NewScale, NewScale
 end
 
 function redzlib:MakeWindow(Configs)
-	local WTitle = Configs[1] or Configs.Name or Configs.Title or "redz Library V5"
-	local WMiniText = Configs[2] or Configs.SubTitle or "by : redz9999"
+	local WTitle = Configs[1] or Configs.Name or Configs.Title or "Someone Hu "
+	local WMiniText = Configs[2] or Configs.SubTitle or "by : Someone"
 	
 	Settings.ScriptFile = Configs[3] or Configs.SaveFolder or false
 	
