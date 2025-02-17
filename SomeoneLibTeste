@@ -84,7 +84,7 @@ local redzlib = {
 		}
 	},
 	Info = {
-		Version = "1.1.0"
+		Version = "1.0"
 	},
 	Save = {
 		UISize = {900, 600},
@@ -924,7 +924,7 @@ local redzlib = {
 }
 
 local ViewportSize = workspace.CurrentCamera.ViewportSize
-local UIScale = ViewportSize.Y / 450
+local UIScale = ViewportSize.Y / 600
 
 local Settings = redzlib.Settings
 local Flags = redzlib.Flags
@@ -1220,10 +1220,10 @@ local function VerifyTheme(Theme)
 	end
 end
 
-local function SaveJson(FileName, save)
+local function SaveJson(SomeoneHub, save)
 	if writefile then
 		local json = HttpService:JSONEncode(save)
-		writefile(FileName, json)
+		writefile(SomeoneHub, json)
 	end
 end
 
@@ -1432,13 +1432,13 @@ function redzlib:SetTheme(NewTheme)
 end
 
 function redzlib:SetScale(NewScale)
-	NewScale = ViewportSize.Y / math.clamp(NewScale, 300, 2000)
+	NewScale = ViewportSize.Y / math.clamp(NewScale, 600, 4000)
 	UIScale, ScreenGui.Scale.Scale = NewScale, NewScale
 end
 
 function redzlib:MakeWindow(Configs)
-	local WTitle = Configs[1] or Configs.Name or Configs.Title or "redz Library V5"
-	local WMiniText = Configs[2] or Configs.SubTitle or "by : redz9999"
+	local WTitle = Configs[1] or Configs.Name or Configs.Title or "Someone Hub"
+	local WMiniText = Configs[2] or Configs.SubTitle or "by : Someone"
 	
 	Settings.ScriptFile = Configs[3] or Configs.SaveFolder or false
 	
@@ -1466,7 +1466,7 @@ function redzlib:MakeWindow(Configs)
 		Name = "Hub"
 	}), "Main")
 	Make("Gradient", MainFrame, {
-		Rotation = 45
+		Rotation = 100
 	})MakeDrag(MainFrame)
 	
 	local MainCorner = Make("Corner", MainFrame)
