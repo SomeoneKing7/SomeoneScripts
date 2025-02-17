@@ -1425,12 +1425,12 @@ function redzlib:MakeWindow(Configs)
 	local UISizeX, UISizeY = unpack(redzlib.Save.UISize)
 	local MainFrame = InsertTheme(Create("ImageButton", ScreenGui, {
 		Size = UDim2.fromOffset(UISizeX, UISizeY),
-		Position = UDim2.new(5, -UISizeX/2, 5, -UISizeY/2),
+		Position = UDim2.new(0.5, -UISizeX/2, 0.5, -UISizeY/2),
 		BackgroundTransparency = 0.03,
 		Name = "Hub"
 	}), "Main")
 	Make("Gradient", MainFrame, {
-		Rotation = 45
+		Rotation = 100
 	})MakeDrag(MainFrame)
 	
 	local MainCorner = Make("Corner", MainFrame)
@@ -1616,7 +1616,7 @@ function redzlib:MakeWindow(Configs)
 	end
 	function Window:AddMinimizeButton(Configs)
 		local Button = MakeDrag(Create("ImageButton", ScreenGui, {
-			Size = UDim2.fromOffset(35, 35),
+			Size = UDim2.fromOffset(60, 60),
 			Position = UDim2.fromScale(0.15, 0.15),
 			BackgroundTransparency = 1,
 			BackgroundColor3 = Theme["Color Hub 2"],
