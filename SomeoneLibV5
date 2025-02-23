@@ -1533,7 +1533,7 @@ function redzlib:MakeWindow(Configs)
 			PaddingTop = UDim.new(0, 10),
 			PaddingBottom = UDim.new(0, 10)
 		}), Create("UIListLayout", {
-			Padding = UDim.new(0, 5)
+			Padding = UDim.new(0, 0.5)
 		})
 	}), "ScrollBar")
 	
@@ -1578,13 +1578,13 @@ function redzlib:MakeWindow(Configs)
 	ConnectSave(ControlSize1, function()
 		if not Minimized then
 			redzlib.Save.UISize = {MainFrame.Size.X.Offset, MainFrame.Size.Y.Offset}
-			SaveJson("redz library V5.json", redzlib.Save)
+			SaveJson("Someone Hub.json", redzlib.Save)
 		end
 	end)
 	
 	ConnectSave(ControlSize2, function()
 		redzlib.Save.TabSize = MainScroll.Size.X.Offset
-		SaveJson("redz library V5.json", redzlib.Save)
+		SaveJson("Someone Hub.json", redzlib.Save)
 	end)
 	
 	local ButtonsFolder = Create("Folder", TopBar, {
