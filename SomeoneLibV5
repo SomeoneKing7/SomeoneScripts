@@ -89,7 +89,7 @@ local redzlib = {
 	Save = {
 		UISize = {550, 315},
 		TabSize = 130,
-		Theme = "Someone2"
+		Theme = "Someone3"
 	},
 	Settings = {},
 	Connection = {},
@@ -1129,7 +1129,7 @@ local GetFlag, SetFlag, CheckFlag do
 end
 
 local ScreenGui = Create("ScreenGui", CoreGui, {
-	Name = "redz Library V5",
+	Name = "Someone Hub",
 }, {
 	Create("UIScale", {
 		Scale = UIScale,
