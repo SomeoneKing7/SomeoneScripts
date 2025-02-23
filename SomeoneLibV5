@@ -410,14 +410,14 @@ BANDEIRA_DO_BRASIL = {
     ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Branco
     ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Branco]]--
 }
-	},
+	}
 	Info = {
 		Version = "1.1.0"
 	},
 	Save = {
 		UISize = {550, 315},
 		TabSize = 130,
-		Theme = "POR_DO_SOL1"
+		Theme = "PORDOSOL1"
 	},
 	Settings = {},
 	Connection = {},
