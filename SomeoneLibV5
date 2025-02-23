@@ -237,7 +237,7 @@ NATAL = {
     ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Branco
     ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Branco
     ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Branco
-}
+},
 
 ANO_NOVO = {
     ["Color Hub 1"] = ColorSequence.new({
@@ -250,7 +250,7 @@ ANO_NOVO = {
     ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Branco
     ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Branco
     ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Branco
-}
+},
 
 DIA_DOS_NAMORADOS = {
     ["Color Hub 1"] = ColorSequence.new({
@@ -263,7 +263,7 @@ DIA_DOS_NAMORADOS = {
     ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Branco
     ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Branco
     ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Branco
-}
+},
 
 SAO_JOAO = {
     ["Color Hub 1"] = ColorSequence.new({
@@ -276,7 +276,7 @@ SAO_JOAO = {
     ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Branco
     ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Branco
     ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Branco
-}
+},
 
 HALLOWEEN = {
     ["Color Hub 1"] = ColorSequence.new({
@@ -397,7 +397,8 @@ VERDE_E_TEXTO_PRETO = {
     ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Fundo branco
     ["Color Text"] = Color3.fromRGB(255, 165, 0), -- Texto colorido (laranja)
     ["Color Dark Text"] = Color3.fromRGB(0, 0, 0) -- Texto preto
-},BANDEIRA_DO_BRASIL = {
+},
+BANDEIRA_DO_BRASIL = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 153, 76)), -- Verde Brasil
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 223, 0)), -- Amarelo Brasil
