@@ -81,7 +81,142 @@ local redzlib = {
 			["Color Theme"] = Color3.fromRGB(0, 0, 0),
 			["Color Text"] = Color3.fromRGB(255, 255, 255),
 			["Color Dark Text"] = Color3.fromRGB(255, 255, 255)
-		}
+		},
+local themes = {
+    {
+        -- Tema "Céu Noturno"
+        ["Color Hub 1"] = ColorSequence.new({
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))
+        }),
+        ["Color Hub 2"] = Color3.fromRGB(25, 25, 112), -- Azul escuro
+        ["Color Stroke"] = Color3.fromRGB(0, 0, 128), -- Azul marinho
+        ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Fundo branco
+        ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Texto branco
+        ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Texto branco
+    },
+    {
+        -- Tema "Cores Tropicais"
+        ["Color Hub 1"] = ColorSequence.new({
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))
+        }),
+        ["Color Hub 2"] = Color3.fromRGB(255, 105, 180), -- Rosa vibrante
+        ["Color Stroke"] = Color3.fromRGB(255, 69, 0), -- Laranja intenso
+        ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Fundo branco
+        ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Texto branco
+        ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Texto branco
+    },
+    {
+        -- Tema "Paz da Menta"
+        ["Color Hub 1"] = ColorSequence.new({
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))
+        }),
+        ["Color Hub 2"] = Color3.fromRGB(152, 255, 152), -- Verde menta
+        ["Color Stroke"] = Color3.fromRGB(0, 128, 0), -- Verde escuro
+        ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Fundo branco
+        ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Texto branco
+        ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Texto branco
+    },
+    {
+        -- Tema "Cores Quentes"
+        ["Color Hub 1"] = ColorSequence.new({
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))
+        }),
+        ["Color Hub 2"] = Color3.fromRGB(255, 69, 0), -- Vermelho laranja
+        ["Color Stroke"] = Color3.fromRGB(255, 140, 0), -- Laranja queimado
+        ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Fundo branco
+        ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Texto branco
+        ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Texto branco
+    },
+    {
+        -- Tema "Café e Creme"
+        ["Color Hub 1"] = ColorSequence.new({
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))
+        }),
+        ["Color Hub 2"] = Color3.fromRGB(210, 180, 140), -- Cor de café
+        ["Color Stroke"] = Color3.fromRGB(139, 69, 19), -- Marrom escuro
+        ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Fundo branco
+        ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Texto branco
+        ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Texto branco
+    }
+-- Lista de temas disponíveis
+local themes = {
+    {
+        -- Tema "Aurora Dourada"
+        ["Color Hub 1"] = ColorSequence.new({
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))
+        }),
+        ["Color Hub 2"] = Color3.fromRGB(255, 223, 0), -- Amarelo dourado
+        ["Color Stroke"] = Color3.fromRGB(204, 153, 0), -- Amarelo queimado
+        ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Fundo branco
+        ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Texto branco
+        ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Texto branco
+    },
+    {
+        -- Tema "Neve Azul"
+        ["Color Hub 1"] = ColorSequence.new({
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))
+        }),
+        ["Color Hub 2"] = Color3.fromRGB(173, 216, 230), -- Azul claro, quase branco
+        ["Color Stroke"] = Color3.fromRGB(70, 130, 180), -- Azul oceano
+        ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Fundo branco
+        ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Texto branco
+        ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Texto branco
+    },
+    {
+        -- Tema "Pôr do Sol"
+        ["Color Hub 1"] = ColorSequence.new({
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))
+        }),
+        ["Color Hub 2"] = Color3.fromRGB(255, 94, 77), -- Laranja avermelhado
+        ["Color Stroke"] = Color3.fromRGB(204, 61, 40), -- Vermelho alaranjado
+        ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Fundo branco
+        ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Texto branco
+        ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Texto branco
+    },
+    {
+        -- Tema "Floresta Mística"
+        ["Color Hub 1"] = ColorSequence.new({
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))
+        }),
+        ["Color Hub 2"] = Color3.fromRGB(34, 139, 34), -- Verde floresta
+        ["Color Stroke"] = Color3.fromRGB(0, 100, 0), -- Verde escuro
+        ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Fundo branco
+        ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Texto branco
+        ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Texto branco
+    },
+    {
+        -- Tema "Lavanda Suave"
+        ["Color Hub 1"] = ColorSequence.new({
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 0)),
+            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))
+        }),
+        ["Color Hub 2"] = Color3.fromRGB(230, 230, 250), -- Lavanda suave
+        ["Color Stroke"] = Color3.fromRGB(138, 43, 226), -- Azul roxo
+        ["Color Theme"] = Color3.fromRGB(255, 255, 255), -- Fundo branco
+        ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Texto branco
+        ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Texto branco
+    }
+}
+}
 	},
 	Info = {
 		Version = "1.1.0"
