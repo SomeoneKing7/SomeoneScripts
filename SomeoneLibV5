@@ -10,7 +10,7 @@ local PlayerMouse = Player:GetMouse()
 
 local redzlib = {
 	Themes = {
-	POR_DO_SOL1 = {
+	PORDOSOL1 = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 140, 0)), -- Laranja Sol
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 69, 0)), -- Vermelho
@@ -22,7 +22,7 @@ local redzlib = {
     ["Color Text"] = Color3.fromRGB(0, 0, 0), -- Preto
     ["Color Dark Text"] = Color3.fromRGB(0, 0, 0) -- Preto
 },
-AZUL_MARINHO1 = {
+--[[AZULMARINHO1 = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 128)), -- Azul Marinho
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 255)), -- Azul
@@ -34,7 +34,7 @@ AZUL_MARINHO1 = {
     ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Branco
     ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Branco
 },
-VERDE_MENTA = {
+VERDEMENTA = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 255)), -- Ciano
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 255, 128)), -- Verde Claro
@@ -46,7 +46,7 @@ VERDE_MENTA = {
     ["Color Text"] = Color3.fromRGB(0, 0, 0), -- Preto
     ["Color Dark Text"] = Color3.fromRGB(0, 0, 0) -- Preto
 },
-AZUL_SERENO = {
+AZULSERENO = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(70, 130, 180)), -- Azul Steel
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(135, 206, 250)), -- Azul Claro
@@ -58,7 +58,7 @@ AZUL_SERENO = {
     ["Color Text"] = Color3.fromRGB(0, 0, 0), -- Preto
     ["Color Dark Text"] = Color3.fromRGB(0, 0, 0) -- Preto
 },
-VERAO_TROPICAL = {
+VERAOTROPICAL = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 99, 71)), -- Tomate
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 69, 0)), -- Vermelho
@@ -70,7 +70,7 @@ VERAO_TROPICAL = {
     ["Color Text"] = Color3.fromRGB(0, 0, 0), -- Preto
     ["Color Dark Text"] = Color3.fromRGB(0, 0, 0) -- Preto
 },
-AURORA_BOREAL = {
+AURORABOREAL = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 255)), -- Ciano
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(75, 0, 130)), -- Roxo Escuro
@@ -82,7 +82,7 @@ AURORA_BOREAL = {
     ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Branco
     ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Branco
 },
-CAFE_TRUFADO = {
+CAFETRUFADO = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(139, 69, 19)), -- Marrom
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(205, 133, 63)), -- Marrom Claro
@@ -106,7 +106,7 @@ OASIS = {
     ["Color Text"] = Color3.fromRGB(0, 0, 0), -- Preto
     ["Color Dark Text"] = Color3.fromRGB(0, 0, 0) -- Preto
 },
-PASTEL_SUAAVE = {
+PASTELSUAAVE = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 182, 193)), -- Rosa Claro
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(173, 216, 230)), -- Azul Claro
@@ -118,7 +118,7 @@ PASTEL_SUAAVE = {
     ["Color Text"] = Color3.fromRGB(0, 0, 0), -- Preto
     ["Color Dark Text"] = Color3.fromRGB(0, 0, 0) -- Preto
 },
-CHUVA_DE_PRATA = {
+CHUVADEPRATA = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(192, 192, 192)), -- Prata
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(105, 105, 105)), -- Cinza Escuro
@@ -130,7 +130,7 @@ CHUVA_DE_PRATA = {
     ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Branco
     ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Branco
 },
-SUNSET_TROPICAL = {
+SUNSETTROPICAL = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 94, 77)), -- Rosa
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 141, 0)), -- Laranja
@@ -142,7 +142,7 @@ SUNSET_TROPICAL = {
     ["Color Text"] = Color3.fromRGB(0, 0, 0), -- Preto
     ["Color Dark Text"] = Color3.fromRGB(0, 0, 0) -- Preto
 },
-FLORESTA_MAGICA = {
+FLORESTAMAGICA = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 100, 0)), -- Verde Escuro
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(34, 139, 34)), -- Verde Floresta
@@ -154,7 +154,7 @@ FLORESTA_MAGICA = {
     ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Branco
     ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Branco
 },
-VIOLETA_SUAVE = {
+VIOLETASUAVE = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(138, 43, 226)), -- Violeta
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(75, 0, 130)), -- Índigo
@@ -166,7 +166,7 @@ VIOLETA_SUAVE = {
     ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Branco
     ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Branco
 },
-CORES_DO_VERAO = {
+CORESERAO = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 223, 0)), -- Amarelo
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 105, 180)), -- Rosa Claro
@@ -178,7 +178,7 @@ CORES_DO_VERAO = {
     ["Color Text"] = Color3.fromRGB(0, 0, 0), -- Preto
     ["Color Dark Text"] = Color3.fromRGB(0, 0, 0) -- Preto
 },
-FERIAS_TROPICAIS = {
+FERIATROPICAIS = {
     ["Color Hub 1"] = ColorSequence.new({
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 128, 128)), -- Verde Água
         ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 223, 0)), -- Amarelo Sol
@@ -408,7 +408,7 @@ BANDEIRA_DO_BRASIL = {
     ["Color Stroke"] = Color3.fromRGB(0, 153, 76), -- Verde Brasil
     ["Color Theme"] = Color3.fromRGB(0, 0, 0), -- Preto
     ["Color Text"] = Color3.fromRGB(255, 255, 255), -- Branco
-    ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Branco
+    ["Color Dark Text"] = Color3.fromRGB(255, 255, 255) -- Branco]]--
 }
 	},
 	Info = {
